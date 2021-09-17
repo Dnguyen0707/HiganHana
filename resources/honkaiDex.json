@@ -1,0 +1,548 @@
+{
+  "Kiana" : [
+    {
+      "fullName" : "White Comet",
+      "short" : ["WC"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/0/08/White_Comet_%28Outfit%29.png/revision/latest?cb=20210819165421",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Valkyrie Ranger",
+      "short" : ["VR"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/e/ef/Valkyrie_Ranger_%28Outfit%29.png/revision/latest?cb=20210819165339",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Void Drifter",
+      "short" : ["VD"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/b/bf/Void_Drifter_%28Outfit%29.png/revision/latest?cb=20191216012416",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Divine Prayer",
+      "short" : ["DP"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/d/d8/Divine_Prayer_%28Outfit%29.png/revision/latest?cb=20210819165258",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Knight Moonbeam",
+      "short" : ["KM", "KMB"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/4/45/Knight_Moonbeam_%28Outfit%29.png/revision/latest?cb=20210819165110",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Herrscher of the Void",
+      "short" : ["HoV", "GK"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/6/6a/Herrscher_of_the_Void_%28Outfit%29.png/revision/latest?cb=20210819165006",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Herrscher of Flamescion",
+      "short" : ["HoF", "FK", "HFS", "HoFs"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/d/dd/Herrscher_of_Flamescion_%28Outfit%29.png/revision/latest?cb=20210819164447",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Mei" : [
+    {
+      "fullName" : "Crimson Impulse",
+      "short" : ["CI"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/9/91/Crimson_Impulse_%28Outfit%29.png/revision/latest?cb=20210819165942",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Shadow Dash",
+      "short" : ["SD"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/e/e8/Shadow_Dash_%28Outfit%29.png/revision/latest?cb=20210819170425",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Danzai Spectramancer",
+      "short" : ["DS"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/3/3d/Danzai_Spectramancer_%28Outfit%29.png/revision/latest?cb=20210819170814",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Valkyrie Bladestrike",
+      "short" : ["VB"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/5/59/Valkyrie_Bladestrike_%28Outfit%29.png/revision/latest?cb=20210819170350",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Striker Fulminata",
+      "short" : ["StFu"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/7/78/Striker_Fulminata_%28Outfit%29.png/revision/latest?cb=20210819170857",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Lightning Empress",
+      "short" : ["LE"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/c/c8/Lightning_Empress_%28Outfit%29.png/revision/latest?cb=20210819170516",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Herrscher of Thunder",
+      "short" : ["HoT"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/3/39/Herrscher_of_Thunder_%28Outfit%29.png/revision/latest?cb=20200807063455",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Bronya" : [
+    {
+      "fullName" : "Valkyrie Chariot",
+      "short" : ["VC"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/8/84/Valkyrie_Chariot_%28Outfit%29.png/revision/latest?cb=20210819210546",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Snowy Sniper",
+      "short" : ["SS"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/2/2e/Snowy_Sniper_%28Outfit%29.png/revision/latest?cb=20210819210658",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Yamabuki Armor",
+      "short" : ["YA"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/2/20/Yamabuki_Armor_%28Outfit%29.png/revision/latest?cb=20210819210622",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Drive Kometa",
+      "short" : ["DK"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/8/81/Drive_Kometa_%28Outfit%29.png/revision/latest?cb=20191216012419",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Dimension Breaker",
+      "short" : ["DB"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/5/5e/Dimension_Breaker_%28Outfit%29.png/revision/latest?cb=20210819210737",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Black Nucleus",
+      "short" : ["BN"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/f/f7/Black_Nucleus_%28Outfit%29.png/revision/latest?cb=20210819210848",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Herrscher of Reason",
+      "short" : ["HoR"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/1/1b/Herrscher_of_Reason_%28Outfit%29.png/revision/latest?cb=20210819210931",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Wolf's Dawn",
+      "short" : ["WD"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/f/ff/Wolf%27s_Dawn_%28Outfit%29.png/revision/latest?cb=20210819210813",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Haxxor Bunny",
+      "short" : ["HB", "Bronie", "Haxxor"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/7/74/Haxxor_Bunny_%28Outfit%29.png/revision/latest?cb=20210425235137",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Himeko" : [
+    {
+      "fullName" : "Battle Storm",
+      "short" : ["BS"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/6/63/Battle_Storm_%28Outfit%29.png/revision/latest?cb=20210819203307",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Valkyrie Triumph",
+      "short" : ["VT"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/0/08/Valkyrie_Triumph_%28Outfit%29.png/revision/latest?cb=20210819203125",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Scarlet Fusion",
+      "short" : ["SF"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/b/ba/Scarlet_Fusion_%28Outfit%29.png/revision/latest?cb=20210819203216",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Blood Rose",
+      "short" : ["BR"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/0/04/Blood_Rose_%28Outfit%29.png/revision/latest?cb=20210819202939",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Kriegsmesser",
+      "short" : ["Ice Himeko", "Kriegs"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/a/ad/Kriegsmesser_%28Outfit%29.png/revision/latest?cb=20210819203013",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Vermilion Knight - Eclipse",
+      "short" : ["VK", "VKE"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/e/e2/Vermilion_Knight_-_Eclipse_%28Outfit%29.png/revision/latest?cb=20210819202828",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Yae Sakura" : [
+    {
+      "fullName" : "Gyakushinn Miko",
+      "short" : ["Miko"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/0/0f/Gyakushinn_Miko_%28Outfit%29.png/revision/latest?cb=20210819205817",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Goushinnso Memento",
+      "short" : ["Meme", "Mentos"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/d/d8/Goushinnso_Memento_%28Outfit%29.png/revision/latest?cb=20210819205937",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Flame Sakitama",
+      "short" : ["FS"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/c/c8/Flame_Sakitama_%28Outfit%29.png/revision/latest?cb=20210819205902",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Darkbolt Jonin",
+      "short" : ["DJ", "Kasumi"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/5/57/Darkbolt_Jonin_%28Outfit%29.png/revision/latest?cb=20191219090833",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Theresa" : [
+    {
+      "fullName" : "Valkyrie Pledge",
+      "short" : ["VP"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/3/3f/Valkyrie_Pledge_%28Outfit%29.png/revision/latest?cb=20210819211904",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Violet Executer",
+      "short" : ["VE"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/7/72/Violet_Executer_%28Outfit%29.png/revision/latest?cb=20210819212023",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Twilight Paladin",
+      "short" : ["TP"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/5/5e/Twilight_Paladin_%28Outfit%29.png/revision/latest?cb=20191216012412",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Sakuno Rondo",
+      "short" : ["SR"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/b/b3/Sakuno_Rondo_%28Outfit%29.png/revision/latest?cb=20210819211942",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Celestial Hymn",
+      "short" : ["CH"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/0/0b/Celestial_Hymn_%28Outfit%29.png/revision/latest?cb=20210819212101",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Luna Kindred",
+      "short" : ["LK"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/4/47/Luna_Kindred_%28Outfit%29.png/revision/latest?cb=20210819212138",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Starlit Astrologos",
+      "short" : ["SA"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/7/7e/Starlit_Astrologos_%28Outfit%29.png/revision/latest?cb=20200628001034",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Fu Hua" : [
+    {
+      "fullName" : "Valkyrie Accipiter",
+      "short" : ["VA"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/8/8f/Valkyrie_Accipiter_%28Outfit%29.png/revision/latest?cb=20210819171720",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Hawk of the Fog",
+      "short" : ["HF"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/9/94/Hawk_of_the_Fog_%28Outfit%29.png/revision/latest?cb=20191216012421",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Phoenix",
+      "short" : ["PX"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/c/c0/Phoenix_%28Outfit%29.png/revision/latest?cb=20210819171943",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Night Squire",
+      "short" : ["NS"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/0/0f/Night_Squire_%28Outfit%29.png/revision/latest?cb=20210819172046",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Shadow Knight",
+      "short" : ["SK"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/a/a7/Shadow_Knight_%28Outfit%29.png/revision/latest?cb=20210819171905",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Azure Empyrea",
+      "short" : ["AE"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/a/ab/Azure_Empyrea_%28Outfit%29.png/revision/latest?cb=20200207091238",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Herrscher of Sentience",
+      "short" : ["HoS"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/a/a4/Herrscher_of_Sentience_%28Outfit%29.png/revision/latest?cb=20210305022240",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Kallen" : [
+    {
+      "fullName" : "Imayoh Ritual",
+      "short" : ["IR", "RI"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/0/09/Imayoh_Ritual_%28Outfit%29.png/revision/latest?cb=20210819210207",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Sixth Serenade",
+      "short" : ["6S"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/e/e4/Sixth_Serenade_%28Outfit%29.png/revision/latest?cb=20210819210347",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Sündenjäger",
+      "short" : ["SJ"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/4/43/Sündenjäger_%28Outfit%29.png/revision/latest?cb=20210819210301",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Rita" : [
+    {
+      "fullName" : "Umbral Rose",
+      "short" : ["UR"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/a/af/Umbral_Rose_%28Outfit%29.png/revision/latest?cb=20210819212435",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Phantom Iron",
+      "short" : ["PI"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/f/f0/Phantom_Iron_%28Outfit%29.png/revision/latest?cb=20210819212508",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Argent Knight: Artemis",
+      "short" : ["AK", "AKA", "Ice Rita"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/0/0d/Argent_Knight_-_Artemis_%28Outfit%29.png/revision/latest?cb=20210819212543",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Fallen Rosemary",
+      "short" : ["FR"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/2/2c/Fallen_Rosemary_%28Outfit%29.png/revision/latest?cb=20210819212618",
+      "type" : "QUA",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Olenyevas" : [
+    {
+      "fullName" : "Blueberry Blitz",
+      "short" : ["BB"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/3/3b/Blueberry_Blitz_%28Outfit%29.png/revision/latest?cb=20210819202539",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Molotov Cherry",
+      "short" : ["MC"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/e/e5/Molotov_Cherry_%28Outfit%29.png/revision/latest?cb=20210819211233",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Fervent Tempo Δ",
+      "short" : ["FT", "Delta"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/0/0e/Fervent_Tempo_Δ_%28Outfit%29.png/revision/latest?cb=20210131203818",
+      "type" : "PSY",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Seele" : [
+    {
+      "fullName" : "Swallowtail Phantasm",
+      "short" : ["SP"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/b/b6/Swallowtail_Phantasm_%28Outfit%29.png/revision/latest?cb=20210819202232",
+      "type" : "QUA",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Stygian Nymph",
+      "short" : ["SN"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/a/aa/Stygian_Nymph_%28Outfit%29.png/revision/latest?cb=20210819202136",
+      "type" : "QUA",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Starchasm Nyx",
+      "short" : ["Nyx", "SNyx"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/d/de/Starchasm_Nyx_%28Outfit%29.png/revision/latest?cb=20210603113520",
+      "type" : "QUA",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Durandal" : [
+    {
+      "fullName" : "Valkyrie Gloria",
+      "short" : ["VG"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/e/ec/Valkyrie_Gloria_%28Outfit%29.png/revision/latest?cb=20200414011554",
+      "type" : "QUA",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Bright Knight: Excelsis",
+      "short" : ["BK", "BKE"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/7/7b/Bright_Knight_-_Excelsis_%28Outfit%29.png/revision/latest?cb=20200516194711",
+      "type" : "MECH",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Dea Anchora",
+      "short" : ["DA"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/c/c7/Dea_Anchora_%28Outfit%29.png/revision/latest?cb=20210819201744",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    }
+  ],
+  "Collab" : [
+    {
+      "fullName" : "Asuka",
+      "short" : ["BH"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/9/90/Blazing_Hope_%28Outfit%29.png/revision/latest?cb=20210131003004",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    },
+    {
+      "fullName" : "Fischl",
+      "short" : ["Fish"],
+      "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/d/d2/Prinzessin_der_Verurteilung%21_%28Outfit%29.png/revision/latest?cb=20210819171042",
+      "type" : "BIO",
+      "video" : "",
+      "document" : ""
+    }
+  ]
+}
