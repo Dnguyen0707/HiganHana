@@ -490,7 +490,7 @@
       "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/a/aa/Stygian_Nymph_%28Outfit%29.png/revision/latest?cb=20210819202136",
       "type" : "QUA",
       "video" : "",
-      "document" : ""
+      "document" : "https://higan-hana.notion.site/Stygian-Nymph-1f70cf4035924ffb9a82d06f96b5a840"
     },
     {
       "fullName" : "Starchasm Nyx",
@@ -498,7 +498,7 @@
       "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/d/de/Starchasm_Nyx_%28Outfit%29.png/revision/latest?cb=20210603113520",
       "type" : "QUA",
       "video" : "",
-      "document" : ""
+      "document" : "https://higan-hana.notion.site/Starchasm-Nyx-87a0950d58e64777aa9aa52f81ef39dd"
     }
   ],
   "Durandal" : [
@@ -527,18 +527,28 @@
       "document" : ""
     }
   ],
+  "MOTH" : [
+    {
+      "fullName" : "Miss Pink Elf",
+      "short" : ["Elysia"],
+      "picture" : "",
+      "type" : "",
+      "video" : "",
+      "document" : ""
+    }
+  ],
   "Collab" : [
     {
-      "fullName" : "Asuka",
-      "short" : ["BH"],
+      "fullName" : "Blazing Hope",
+      "short" : ["BH", "Asuka"],
       "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/9/90/Blazing_Hope_%28Outfit%29.png/revision/latest?cb=20210131003004",
       "type" : "BIO",
       "video" : "",
       "document" : ""
     },
     {
-      "fullName" : "Fischl",
-      "short" : ["Fish"],
+      "fullName" : "Prinzessin der Verurteilung!",
+      "short" : ["Fish", "Fischl"],
       "picture" : "https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/d/d2/Prinzessin_der_Verurteilung%21_%28Outfit%29.png/revision/latest?cb=20210819171042",
       "type" : "BIO",
       "video" : "",

@@ -44,6 +44,8 @@ module.exports = {
                     //update json
                     setting.currentAvatar = "Tsukika";
                     fs.writeFileSync('./src/setting.json', JSON.stringify(setting));
+
+                    setActivity()
                 }
             }
             //switching to Hinoka, from 7AM to 11PM
@@ -60,18 +62,27 @@ module.exports = {
                     //update json
                     setting.currentAvatar = "Hinoka";
                     fs.writeFileSync('./src/setting.json', JSON.stringify(setting));
+
+                    setActivity()
                 }
             }
         }
         setInterval(avatarSwitch, 1000);   //check every 1 second
 
-        //set presence
-        bot.user.setActivity('Type /help', {type: 'LISTENING'});
+        function setActivity()
+        {
+            //set presence
+            bot.user.setActivity('Type /help', {type: 'LISTENING'});
+        }
+
+
 
         /*----------------------------------------------------------------------------------------------------*/
 
         //TODO send notification for yeeting
     }
+
+
 };
 
 

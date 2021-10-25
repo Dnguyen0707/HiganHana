@@ -1,17 +1,15 @@
 module.exports = (bot) => {
     bot.handleEvents = async (eventFiles, path) => {
-        for (const file of eventFiles)
-        {
+        for (const file of eventFiles) {
             const event = require(`../events/${file}`);
 
-            if (event.once)
-            {
+            if (event.once) {
                 bot.once(event.name, (...args) => event.execute(...args, bot));
-            }
-            else
-            {
+            } else {
                 bot.on(event.name, (...args) => event.execute(...args, bot));
             }
+
+
         }
     };
 }

@@ -5,8 +5,9 @@ const { MessageActionRow, MessageButton, ButtonInteraction} = require('discord.j
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('yahallo')
-        .setDescription('Give role'),
-    async execute(interaction, args, bot)
+        .setDescription('Give role')
+    ,
+    async execute(interaction)
     {
         //get member
         const member = interaction.member;
@@ -34,7 +35,7 @@ module.exports = {
                     .setStyle('SUCCESS')
             )
 
-            interaction.channel.send({content: 'Did you came from Honkai? If not, then select no', components: [row] })
+            interaction.channel.send({content: `${member} Did you came from Honkai? If not, then select no`, components: [row] })
 
             const filter = (input) => {
                 if (input.member === member) return true;

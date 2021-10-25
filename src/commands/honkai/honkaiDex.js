@@ -10,10 +10,10 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('search')
-                .setDescription('Search up a battlesuit by abbreviation or full name (It\'s case sensitive sadly for now)')
+                .setDescription('Search up a battlesuit by abbreviation or full name (Abbreviation is case sensitive sadly for now)')
                 .addStringOption(option => option.setName('target').setDescription('Target battlesuit name').setRequired(true))
         )
-    //TODO add later
+    //TODO add later, maybe
         // .addSubcommand(subcommand =>
         //     subcommand
         //         .setName('character')
@@ -21,7 +21,7 @@ module.exports = {
         //         .addStringOption(option => option.setName('target').setDescription('Character name').setRequired(true))
         // )
     ,
-    async execute(interaction, bot, args) {
+    async execute(message) {
 
         let jsonHonkaiDex;
         let honkaiDex;
@@ -34,10 +34,10 @@ module.exports = {
             console.log(err)
             return
         }
-        let input = interaction.options.getString('target');
+        let input = message.options.getString('target');
 
         //TODO make this not case sensitive
-        switch (interaction.options.getSubcommand()) {
+        switch (message.options.getSubcommand()) {
             case 'search':
                 let keys = Object.keys(honkaiDex)
                 let results = []
@@ -45,7 +45,12 @@ module.exports = {
                 keys.forEach(key => {
                     let char = honkaiDex[key]
                     char.forEach(sub => {
-                        let found = sub.fullName === input || sub.short.includes(input)
+
+                        let lowerInput = input.toLowerCase()
+                        let lowerName = sub.fullName.toLowerCase()
+
+                        let found = lowerName === lowerInput || sub.short.includes(input)
+
                         if (found) {
                             results.push(sub)
                         }
@@ -64,8 +69,9 @@ module.exports = {
                         {name: 'Document Guide', value: linkToString(info.document), inline: true},
                         {name: 'Video Guide', value: linkToString(info.video), inline: true}
                     )
+                    .setFooter('If you want to help filling in HonkaiDex data, feel free to contact Kiyan')
 
-                interaction.channel.send({embeds: [embed]})
+                message.channel.send({embeds: [embed]})
                 break;
             case 'character':
                 break;
