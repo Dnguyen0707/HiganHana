@@ -69,7 +69,7 @@ module.exports = {
                         break;
 
                     case 'no':
-                        interaction.reply('Welcome to the server!')
+                        interaction.channel.send('Welcome to the server!');
                         break;
 
                     default:
