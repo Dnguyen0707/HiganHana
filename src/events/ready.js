@@ -16,7 +16,7 @@ module.exports = {
         try {
             jsonSetting = fs.readFileSync('./src/setting.json')
             setting = JSON.parse(jsonSetting)
-            console.log("The current avatar is:", setting.currentAvatar)
+            console.log("Current avatar:", setting.currentAvatar)
         } catch (err) {
             console.log(err)
             return
@@ -79,7 +79,6 @@ module.exports = {
 
         /*----------------------------------------------------------------------------------------------------*/
 
-        //TODO send notification for yeeting
     }
 
 
