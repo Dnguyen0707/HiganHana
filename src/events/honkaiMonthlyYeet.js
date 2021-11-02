@@ -1,8 +1,9 @@
 //setting and stuff
 const fs = require('fs');
 const {ZoneOffset, LocalDateTime} = require('@js-joda/core');
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, Channel} = require('discord.js');
 
+//TODO: need to debug
 module.exports = {
     name: 'honkaiMonthlyYeet',
     once: true,
@@ -15,7 +16,7 @@ module.exports = {
         try {
             jsonSetting = fs.readFileSync('./src/setting.json')
             setting = JSON.parse(jsonSetting)
-            console.log("Curret Monthly Yeet: " + setting.monthlyYeet)
+            console.log("Monthly Yeet Setting: " + setting.monthlyYeet)
         }
         catch (e)
         {
@@ -40,7 +41,16 @@ module.exports = {
                     .setTitle(currentDateTime.month() + " Yeeting Time")
                     .setColor('#990000')
                     .setDescription("Here it is people, it's time for yeeting. Same as usual, if you been inactive since the " +
-                        "beginning of last month, the bye bye yeeting time")
+                        "beginning of last month, then bye bye you most likely will get yeeted")
+                    .setTimestamp()
+                    .addField('If you know you\'re gonna be gone', 'Please notify me ASAP so I don\'t unga bunga kick you')
+                    .addField('If I kicked you and you want to come back', 'Just reapply lmao')
+
+                const announcement = bot.channels.cache.get('902451822843797544')
+
+                announcement.send('<@&750507944076116139>')
+                announcement.send({ embeds: [embed] })
+                announcement.send('Hey <@346806438783352834>, stop slacking off will ya?')
             }
         }
         setInterval(monthlyYeet, 1000); //check every 1 second
