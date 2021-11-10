@@ -13,6 +13,7 @@ module.exports = (bot) => {
                 const command = require(`../commands/${folder}/${file}`);
                 // Set a new item in the Collection
                 // With the key as the common name and the value as the exported module
+
                 bot.commands.set(command.data.name, command);
                 bot.commandArray.push(command.data.toJSON());
 

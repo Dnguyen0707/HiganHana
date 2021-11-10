@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/Dnguyen0707/HiganHana#readme",
   "dependencies": {
-    "@discordjs/builders": "^0.6.0",
+    "@discordjs/builders": "^0.8.2",
     "@discordjs/rest": "^0.1.0-canary.0",
-    "@js-joda/core": "^3.2.0",
+    "@js-joda/core": "^4.3.1",
     "@js-joda/timezone": "^2.10.0",
-    "discord-api-types": "^0.22.0",
+    "discord-api-types": "^0.24.0",
     "discord.js": "^13.3.1",
     "dotenv": "^10.0.0"
   }
