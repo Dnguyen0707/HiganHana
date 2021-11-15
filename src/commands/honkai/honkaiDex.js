@@ -58,6 +58,8 @@ module.exports = {
                 })
                 let info = results[0]
 
+                //TODO add a check
+
                 //create embed with info
                 const embed = new MessageEmbed()
                     .setColor('#FF0000')
