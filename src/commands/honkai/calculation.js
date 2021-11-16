@@ -57,7 +57,7 @@ module.exports = {
 
                 //TODO reduce down the decimal
 
-                message.channel.send('Your Valk\'s Crit Rate is: ' + retNoBonus)
+                message.channel.send('Your Valk\'s Crit Rate is: ' + retNoBonus.toFixed(2))
                 break;
 
             case 'stamina':
@@ -81,7 +81,7 @@ module.exports = {
                 let hour = totalMin / 60
                 let min = totalMin % 60
 
-                message.channel.send('It\'s gonna take ' + hour + ' hour and '+ min + ' minute to be fully max stamina again')
+                message.channel.send('It\'s gonna take ' + hour.toFixed(2) + ' hour and '+ min.toFixed(2) + ' minute to be fully max stamina again')
                 break;
 
             default:
