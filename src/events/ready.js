@@ -72,7 +72,7 @@ module.exports = {
         function setActivity()
         {
             //set presence
-            bot.user.setActivity('Type /help', {type: 'LISTENING'});
+            bot.user.setActivity('for dem Slash Commands', {type: 'LISTENING'});
         }
 
 
