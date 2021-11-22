@@ -1,5 +1,5 @@
 const fs = require('fs');
-const {LocalTime, ZoneOffset, DayOfWeek} = require('@js-joda/core');
+const {LocalTime, ZoneOffset, DayOfWeek, LocalDateTime} = require('@js-joda/core');
 
 /**
  * Reminder of honkai abyss time
@@ -9,51 +9,66 @@ module.exports = {
     once: true,
     async execute(bot)
     {
-        let currentTime, currentDay
-
         //get channel
+        let channel = bot.channels.cache.get('813889351104331826')
 
         function notification()
         {
 
-            currentDay = DayOfWeek.now(ZoneOffset.UTC)
-
-            //First Rotation
-            if (currentDay.value() === 1 && isStart()) //Mon PST - Mon UTC
+            //Start and end
+            if (timeCheck(1, true) || timeCheck(5, true))
             {
-                //TODO send
+                channel.send("Abyss have started! go in and beat shit up")
             }
-            else if (currentDay.value() === 4 && !isStart()) // Wed PST - Thu UTC
+            else if (timeCheck(4, false) || timeCheck(1, false))
             {
-                //TODO send
+                channel.send("Abyss have ended! If you forgot then um... no need")
             }
 
-            //Second Rotation
-            if (currentDay.value() === 5 && isStart())  //Fri PST - Fri UTC
+            //check for 15 min before it end
+            if (beforeEnd())
             {
-                //TODO send
+                channel.send("Abyss is ending in 15 min, start speed running that shit if you haven't done it")
             }
-            else if (currentDay.value() === 1 && !isStart())    //Sun PST - Mon UTC
+        }
+        setInterval(notification, 1000) //check every second
+
+        // let currentTime, currentDay
+        let currentTime = LocalTime.now(ZoneOffset.UTC)
+        let currentDay = LocalDateTime.now(ZoneOffset.UTC).dayOfWeek().value()
+
+
+        //check for start and end time
+        function timeCheck(targetDay, start) //
+        {
+            // start Time
+            if(start === true)
             {
-                //TODO send 
+                if (currentTime.hour() === 20 &&
+                    currentDay === targetDay)  //12 PM PST
+                {
+                    return true;
+                }
             }
-
-            //do nothing if else
-
+            // end time
+            else
+            {
+                if (currentTime.hour() === 3 &&
+                    currentDay === targetDay)   //7 PM PST
+                {
+                    return true;
+                }
+            }
         }
 
-
-        function isStart()
+        function beforeEnd()
         {
-            currentTime = LocalTime.now(ZoneOffset.UTC)
-
-            if (currentTime === 20) //8PM UTC - 12 PM PST
+            if (currentDay === 1 || currentDay === 4)
             {
-                return true;
-            }
-            else if (currentTime === 3) //3AM UTC - 7PM PST
-            {
-                return false;
+                if (currentTime.hour() === 2 && currentTime.minute() === 45)
+                {
+                    return true;
+                }
             }
         }
     }

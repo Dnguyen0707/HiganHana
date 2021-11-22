@@ -46,7 +46,7 @@ module.exports = {
                 let bonusRate = Number(message.options.getString('bonusrate'));
 
                 if (Number.isNaN(valkStats) || Number.isNaN(valkLevel) || Number.isNaN(bonusRate)) {
-                    message.channel.send('I\'m not sure what you typed so try again lmao')
+                    message.reply('I\'m not sure what you typed so try again lmao')
                     break;
                 } else if (bonusRate === '') {
                     bonusRate = 0;
@@ -55,9 +55,7 @@ module.exports = {
                 //[CRT STAT ON VALK STATS PAGE / (VALK LEVEL * 5 + 75) * 100 + BONUS RATE
                 let retNoBonus = valkStats / (valkLevel * 5 + 75) * 100 + bonusRate
 
-                //TODO reduce down the decimal
-
-                message.channel.send('Your Valk\'s Crit Rate is: ' + retNoBonus.toFixed(2))
+                message.reply('Your Valk\'s Crit Rate is: ' + retNoBonus.toFixed(2))
                 break;
 
             case 'stamina':
@@ -68,12 +66,12 @@ module.exports = {
                 //error stuff
                 if (Number.isNaN(current) || Number.isNaN(max))
                 {
-                    message.channel.send('I\'m not sure what you typed so try again lmao')
+                    message.reply('I\'m not sure what you typed so try again lmao')
                     break;
                 }
-                else if (current < max)
+                else if (current > max)
                 {
-                    message.channel.send('Uh no, that\'s not how life work')
+                    message.reply('Uh no, that\'s not how life work')
                     break;
                 }
 
@@ -81,7 +79,7 @@ module.exports = {
                 let hour = totalMin / 60
                 let min = totalMin % 60
 
-                message.channel.send('It\'s gonna take ' + hour.toFixed(2) + ' hour and '+ min.toFixed(2) + ' minute to be fully max stamina again')
+                message.reply('It\'s gonna take ' + hour.toFixed(0) + ' hour and '+ min.toFixed(0) + ' minute to be fully max stamina again')
                 break;
 
             default:

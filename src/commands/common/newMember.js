@@ -1,5 +1,5 @@
-const {SlashCommandBuilder, quote} = require('@discordjs/builders');
-const { MessageActionRow, MessageButton, ButtonInteraction} = require('discord.js');
+const {SlashCommandBuilder} = require('@discordjs/builders');
+const { MessageActionRow, MessageButton} = require('discord.js');
 
 //for new player
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
         //check if the user already have the role
         if (member.roles.cache.some(role => role.name === 'Member'))
         {
-            interaction.channel.send('Hey, you already have the Member role, what are you doing?\n' +
+            interaction.reply('Hey, you already have the Member role, what are you doing?\n' +
                 'If you are redoing this to get in the Honkai guild, then just ask one of the Leader/Vice Leader');
         }
         else
@@ -35,7 +35,7 @@ module.exports = {
                     .setStyle('SUCCESS')
             )
 
-            interaction.channel.send({content: `${member} Did you came from Honkai? If not, then select no`, components: [row] })
+            interaction.reply({content: `${member} Did you came from Honkai? If not, then select no`, components: [row] })
 
             const filter = (input) => {
                 if (input.member === member) return true;
@@ -57,19 +57,19 @@ module.exports = {
                 switch (id)
                 {
                     case 'yes_applying':
-                        interaction.channel.send('Awesome! I\'ll let Kiyan or the Vice Leader know, while waiting, feel free to check out the server');
-                        interaction.channel.send('Also, please change your nick to the in-game one');
+                        interaction.reply('Awesome! I\'ll let Kiyan or the Vice Leader know, while waiting, feel free to check out the server\n'
+                        + 'Also, please change your nick to the in-game one');
                         member.roles.add(pendingRole)
                         break;
 
                     case 'yes_already':
-                        interaction.channel.send('I\'m glad you joined us, I\'ll give you the Honkai Member role, and check out the server');
-                        interaction.channel.send('Also, please change your nick to the in-game one');
+                        interaction.reply('I\'m glad you joined us, I\'ll give you the Honkai Member role, and check out the server\n'
+                            + 'Also, please change your nick to the in-game one');
                         member.roles.add(honkaiRole)
                         break;
 
                     case 'no':
-                        interaction.channel.send('Welcome to the server!');
+                        interaction.reply('Welcome to the server!');
                         break;
 
                     default:

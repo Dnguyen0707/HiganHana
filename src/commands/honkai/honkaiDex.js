@@ -2,6 +2,8 @@ const {SlashCommandBuilder, channelMention} = require('@discordjs/builders');
 const {MessageEmbed} = require('discord.js')
 const fs = require('fs');
 
+//TODO start using mongolDB
+
 //for new player
 module.exports = {
     data: new SlashCommandBuilder()
@@ -73,7 +75,7 @@ module.exports = {
                     )
                     .setFooter('If you want to help filling in HonkaiDex data, feel free to contact Kiyan')
 
-                message.channel.send({embeds: [embed]})
+                message.reply({embeds: [embed]})
                 break;
             case 'character':
                 break;
@@ -88,7 +90,7 @@ function linkToString(input)
     const link = JSON.stringify(input).replace(/\"/g, "")
     if (link)
     {
-        return '[Click here]' + '(' + JSON.stringify(input).replace(/\"/g, "") + ')'
+        return '[Click here]' + '(' + link + ')'
     }
     return 'TBA'
 }
@@ -105,7 +107,7 @@ function typePic(input)
             return 'https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/4/48/BIO_%28Icon%29.png/revision/latest?cb=20180420045804'
         case 'QUA':
             return 'https://static.wikia.nocookie.net/honkaiimpact3_gamepedia_en/images/3/3c/QUA_%28Icon%29.png/revision/latest?cb=20190710035412'
-        case 'IMA':     //Not Announced
+        case 'IMA':     //TODO add
             return ""
 
     }
