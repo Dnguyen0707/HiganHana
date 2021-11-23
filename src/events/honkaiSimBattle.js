@@ -1,11 +1,9 @@
 const fs = require('fs');
 const {LocalTime, ZoneOffset, LocalDateTime} = require('@js-joda/core');
 
-/**
- * Reminder of honkai abyss time
- * */
+//TODO change for Sim Battle
 module.exports = {
-    name: 'honkaiabyss',
+    name: 'honkaisimbattle',
     once: true,
     async execute(bot)
     {
@@ -44,8 +42,8 @@ module.exports = {
             // start Time
             if(start === true)
             {
-                if (currentTime.hour() === 20 &&
-                    currentDay === targetDay)  //12 PM PST
+                if (currentTime.hour() === 15 &&
+                    currentDay === targetDay)
                 {
                     return true;
                 }
@@ -54,7 +52,7 @@ module.exports = {
             else
             {
                 if (currentTime.hour() === 3 &&
-                    currentDay === targetDay)   //7 PM PST
+                    currentDay === targetDay)
                 {
                     return true;
                 }

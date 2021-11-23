@@ -3,13 +3,17 @@ const { MessageActionRow, MessageButton, ButtonInteraction} = require('discord.j
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('acceptmember')
-        .setDescription('give Honkai member role to pinged user')
+        .setName('selectmember')
+        .setDescription('give option to what to do with pinged member')
     ,
     async execute(message)
     {
         //get vice
         const vice = message.member;
+
+        //get role
+        let honkaiRole = message.guild.roles.cache.find(role => role.name === "Honkai Member")
+
 
         //check if allowed
         if (vice.roles.cache.some(role => role.name === 'Honkai Vice Leader'))
@@ -18,10 +22,8 @@ module.exports = {
         }
         else
         {
-            //get pinged member
+            //TODO do a drop down selection for this
 
-            //get honkai role
-            let honkaiRole = interaction.guild.roles.cache.find(role => role.name === "Honkai Member")
 
 
         }
