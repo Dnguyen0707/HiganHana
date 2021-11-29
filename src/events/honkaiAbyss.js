@@ -1,5 +1,5 @@
 const fs = require('fs');
-const {LocalTime, ZoneOffset, LocalDateTime} = require('@js-joda/core');
+const {LocalTime, ZoneOffset, LocalDateTime, DayOfWeek} = require('@js-joda/core');
 
 /**
  * Reminder of honkai abyss time
@@ -12,15 +12,21 @@ module.exports = {
         //get channel
         let channel = bot.channels.cache.get('813889351104331826')
 
+        // get current day/time stuff
+        let currentTime = LocalTime.now(ZoneOffset.UTC)
+        let currentDay = LocalDateTime.now(ZoneOffset.UTC)
+        let currentDayOfWeek = currentDay.dayOfWeek()
+
+
         function notification()
         {
 
             //Start and end
-            if (timeCheck(1, true) || timeCheck(5, true))
+            if (timeCheck(DayOfWeek.MONDAY, true) || timeCheck(DayOfWeek.FRIDAY, true))
             {
                 channel.send("Abyss have started! go in and beat shit up")
             }
-            else if (timeCheck(4, false) || timeCheck(1, false))
+            else if (timeCheck(DayOfWeek.THURSDAY, false) || timeCheck(DayOfWeek.MONDAY, false))
             {
                 channel.send("Abyss have ended! If you forgot then um... no need")
             }
@@ -33,9 +39,7 @@ module.exports = {
         }
         setInterval(notification, 1000) //check every second
 
-        // let currentTime, currentDay
-        let currentTime = LocalTime.now(ZoneOffset.UTC)
-        let currentDay = LocalDateTime.now(ZoneOffset.UTC).dayOfWeek().value()
+
 
 
         //check for start and end time
@@ -44,8 +48,8 @@ module.exports = {
             // start Time
             if(start === true)
             {
-                if (currentTime.hour() === 20 &&
-                    currentDay === targetDay)  //12 PM PST
+                if (currentTime.hour() === 22 &&
+                    currentDayOfWeek.equals(targetDay))  //12 PM PST - 20 UTC, TODO change later
                 {
                     return true;
                 }
@@ -54,22 +58,24 @@ module.exports = {
             else
             {
                 if (currentTime.hour() === 3 &&
-                    currentDay === targetDay)   //7 PM PST
+                    currentDayOfWeek.equals(targetDay))   //7 PM PST
                 {
                     return true;
                 }
             }
+            return false;
         }
 
         function beforeEnd()
         {
-            if (currentDay === 1 || currentDay === 4)
+            if (currentDayOfWeek.equals(DayOfWeek.MONDAY) || currentDayOfWeek.equals(DayOfWeek.THURSDAY))
             {
                 if (currentTime.hour() === 2 && currentTime.minute() === 45)
                 {
                     return true;
                 }
             }
+            return false;
         }
     }
 }
