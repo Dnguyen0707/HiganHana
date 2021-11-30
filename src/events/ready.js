@@ -4,7 +4,7 @@ const {LocalTime, ZoneOffset} = require('@js-joda/core');
 
 module.exports = {
     name: 'ready',
-    once: true,
+    once: false,
     async execute(bot)
     {
         /*----------------------------------------------------------------------------------------------------*/

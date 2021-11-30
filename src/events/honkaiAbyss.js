@@ -6,11 +6,11 @@ const {LocalTime, ZoneOffset, LocalDateTime, DayOfWeek} = require('@js-joda/core
  * */
 module.exports = {
     name: 'honkaiabyss',
-    once: true,
+    once: false,
     async execute(bot)
     {
-        //get channel
-        let channel = bot.channels.cache.get('813889351104331826')
+        //get channel TODO currently using beta
+        let channel = bot.channels.cache.get('810705396389773322')
 
         // get current day/time stuff
         let currentTime = LocalTime.now(ZoneOffset.UTC)
@@ -37,9 +37,8 @@ module.exports = {
                 channel.send("Abyss is ending in 15 min, start speed running that shit if you haven't done it")
             }
         }
-        setInterval(notification, 1000) //check every second
 
-
+        notification();
 
 
         //check for start and end time
