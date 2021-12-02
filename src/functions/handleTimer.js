@@ -11,7 +11,8 @@ function RunIt(func, delay)
     var timeCount = 0;
     var ticks = (delay/10)|0;
     var count = 0;
-    RunIt.instance.push(this);
+    RunIt.instances = [];
+    RunIt.instance.push(this.func);
 
     this.tick = function()
     {
@@ -38,7 +39,7 @@ function RunIt(func, delay)
     }
 }
 
-RunIt.instances = [];
+
 
 RunIt.ontick = function ()
 {
@@ -50,4 +51,4 @@ RunIt.ontick = function ()
 
 setInterval(RunIt.ontick, 10);
 
-module.exports = (bot) => {RunIt};
+module.exports = RunIt;
