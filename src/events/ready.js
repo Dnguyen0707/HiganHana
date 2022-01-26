@@ -1,7 +1,7 @@
 //setting status and stuff
 const fs = require('fs');
 const {LocalTime, ZoneOffset} = require('@js-joda/core');
-const {RunIt} = require('../functions/handleTimer')
+
 
 module.exports = {
     name: 'ready',
@@ -69,7 +69,7 @@ module.exports = {
             }
         }
         //setInterval(avatarSwitch, 1000);   //check every 1 second
-        new RunIt(avatarSwitch);
+
 
         function setActivity()
         {

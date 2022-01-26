@@ -4,6 +4,7 @@ require('dotenv').config();
 const {Client, Intents, Collection} = require('discord.js');
 const bot = new Client({intents: [Intents.FLAGS.GUILDS]});
 
+
 //collection
 bot.commands = new Collection();
 

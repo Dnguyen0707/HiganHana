@@ -38,7 +38,7 @@ module.exports = {
             }
         }
 
-        notification();
+
 
 
         //check for start and end time

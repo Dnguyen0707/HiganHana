@@ -1,3 +1,6 @@
+
+
+
 module.exports = (bot) => {
     bot.handleEvents = async (eventFiles, path) => {
         for (const file of eventFiles) {
@@ -10,8 +13,6 @@ module.exports = (bot) => {
                 bot.on(event.name, (...args) => event.execute(...args, bot));
                 console.log(`${event.name} is running`)
             }
-
-
         }
     };
 }
